@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <p class="paragraf">Lorem ipsum dolor sit amet.</p>
+            <p class="paragraf">Lorem ipsum dolor sit amet.</p>
+            <p class="paragraf">Lorem ipsum dolor sit amet.</p>
+            <p class="paragraf">Lorem ipsum dolor sit amet.</p>
+            <p class="paragraf">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="choose">
+            <h2>Choose what you want:</h2>
+            <form action="" name="f2"> 
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline5" value="" name="customRadioInline2" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline5">Table</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline6" value="" name="customRadioInline2" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline6">List</label>
+              </div>
+            </form>
+            <div class="create_element">
+                <div class="TR">
+                    <h5>Count TR:</h5>
+                    <input type="text" class="form-control input_TR" placeholder="Count TR:">
+                </div>
+                <div class="TD">
+                    <h5>Count TD:</h5>
+                    <input type="text" class="form-control input_TD" placeholder="Count TD:">
+                </div>
+                <h3>Add style to your table:</h3>
+                <div class="width_TD">
+                    <h5>Width of TD:</h5>
+                    <input type="text"class="form-control input_wd_TD" placeholder="Width of TD:">
+                </div>
+                <div class="height_TD">
+                    <h5>Height of TD:</h5>
+                    <input type="text" class="form-control input_hg_TD" placeholder="Height of TD:">
+                </div>
+                <div class="border_table">
+                    <h5>Width of border:</h5>
+                    <input type="text" class="form_c1 form-control input_brd" placeholder="Width of border:">
+                    <h5>Type of border:</h5>
+                    <select name="" class="custom-select" id="inputGroupSelect02">
+                        <option value="solid">solid</option>
+                        <option value="dotted">dotted</option>
+                        <option value="dashed">dashed</option>
+                    </select>
+                    <h5>Color of border</h5>
+                    <select name="" class="custom-select" id="inputGroupSelect03">
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                    </select>
+                </div>
+                <button class="btn btn-info">Create table</button>
+            </div>
+            <div class="create_list">
+                <div class="cn_list">
+                    <h5 class="h5">Count li:</h5>
+                    <input type="text" class="form-control input_cn_li" placeholder="Count li">
+                </div>
+                <div class="list_sel">
+                    <h5>Type of markes:</h5>
+                    <select name="" class="custom-select" id="inputGroupSelect04">
+                        <option value="circle">circle</option>
+                        <option value="disck">disck</option>
+                        <option value="square">square</option>
+                    </select>
+                </div>
+                <button class="btn btn-dark">Create List</button>
+            </div>
+        </div>
+        <div class="butt">
+            <button class="btn btn-warning">edit</button>
+            <button class="btn btn-primary">style</button>
+        </div>
+        <div class="area">
+            <textarea name="" id="text_area" cols="30" rows="10"></textarea>
+            <div class="text_btt">
+            <button class="btn btn-danger">add</button>
+            <button class="btn btn-success">save</button>
+            </div>
+            <div class="style">
+                <form action="" name="f1" onsubmit="return false">
+                <div class="change_style">
+                <h6>Font size:</h6>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" value="14" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">14px</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" value="16" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">16px</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline3" value="18" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline3">18px</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline4" value="20" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline4">20px</label>
+                      </div>
+                <h6>Font family</h6>
+                    <div class="input_group">
+                        <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="cursive">cursive</option>
+                        <option value="monospace">monospace</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="sans-serif">sans-serif</option>
+                        </select>
+                    </div>
+                <h6>Colors:</h6>
+                    <button class="btn btn-secondary btn_text_color">Color Text</button>
+                    <button class="btn btn-secondary btn_bg_color">Color Background</button>
+                <h6>Style:</h6>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" value="bold">
+                        <label class="custom-control-label" for="customCheck1">Bold Text</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2" value="italic">
+                        <label class="custom-control-label" for="customCheck2">Italic Text</label>
+                    </div>
+                </div> 
+                </form>
+                <div class="colors">
+                    <div class="square">
+                        <div class="part red"></div>
+                        <div class="part orange"></div>
+                        <div class="part yellow"></div>
+                        <div class="part green"></div>
+                        <div class="part aqua"></div>
+                        <div class="part blue"></div>
+                        <div class="part pink"></div>
+                        <div class="part fiolet"></div>
+                        <div class="part grey"></div>
+                    </div>
+                    <div class="square_bg">
+                            <div class="part red_bg"></div>
+                            <div class="part orange_bg"></div>
+                            <div class="part yellow_bg"></div>
+                            <div class="part green_bg"></div>
+                            <div class="part aqua_bg"></div>
+                            <div class="part blue_bg"></div>
+                            <div class="part  pink_bg"></div>
+                            <div class="part fiolet_bg"></div>
+                            <div class="part grey_bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------                       Script                  ------------->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
